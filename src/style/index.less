@@ -1,14 +1,17 @@
 @import './normalize.less';
 @import './font.less';
 @import './color.less';
+@import './button.less';
 
 #root{
   margin: 0 70px;
+  min-width: 1325px;
 
   .title{
     display: inline-block;
     font-size: 45px;
     margin: 72px 0 60px 0;
+    font-family: 'Courier New';
   }
 
   .font aside{
@@ -58,8 +61,44 @@
     dl:nth-child(2), dl:nth-child(4){
       margin: 0 88px;
     }
-
   }
 
+  .component aside{
+    display: inline-block;
+    .extra{
+      color:#B6BAC1;
+    }
+    
+  }
+  .component{
+    .button{
+      dl{
+        float: left;
+        margin-top: 40px;
+        margin-left: 0px;
+        dd{
+          margin: 20px;
+          .btn{
+            margin-left: 14px;
+          }
+        }
+      }
+      dl:nth-child(2){
+        dd{
+          margin-left: 0;
+        }
+      }
+    }
+
+    .pagenation{
+      margin-left: 170px;
+    }
+  }
+
+.clearfix{
+  clear: both;
+  content: '';
+  display: block;
+}
 }
 
