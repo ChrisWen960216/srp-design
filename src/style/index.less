@@ -2,13 +2,14 @@
 @import './font.less';
 @import './color.less';
 @import './button.less';
+@import './pagenation.less';
 
 #root{
   margin: 0 70px;
   min-width: 1325px;
 
   .title{
-    display: inline-block;
+    display: block;
     font-size: 45px;
     margin: 72px 0 60px 0;
     font-family: 'Courier New';
@@ -65,6 +66,7 @@
 
   .component aside{
     display: inline-block;
+    color: #BBBDC2;
     .extra{
       color:#B6BAC1;
     }
@@ -72,6 +74,7 @@
   }
   .component{
     .button{
+      float: left;
       dl{
         float: left;
         margin-top: 40px;
@@ -89,10 +92,21 @@
         }
       }
     }
-
-    .pagenation{
+    .aside{
+      float: left;
       margin-left: 170px;
+      .pagenation{
+        display: block;
+        .page{
+          margin-top: 60px;
+        }
+      }
+      .checkbox-radio{
+        margin-top: 70px;
+      }
     }
+
+
   }
 
 .clearfix{

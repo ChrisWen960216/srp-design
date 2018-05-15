@@ -86,36 +86,54 @@
     </aside>
   </section>
 
-  <section class='component'>
+  <section class='component clearfix'>
     <header>
       <span class="title">03. Component</span>
     </header>
-    <aside class='button clearfix'>
+    <aside class='button'>
       <header>
         <span class='extra font-t1'>按钮</span>
       </header>
       <dl>
         <dd class='font-t4'>默认:<button class='btn primary-btn'>启用</button></dd>
-        <dd class='font-t4'>禁用:<button class='btn primary-btn disabled' disabled>禁用</button></dd>
+        <dd class='font-t4'>禁用:<button class='btn primary-btn disabled-btn' disabled>禁用</button></dd>
       </dl>
       <dl>
-        <dd class='font-t4'>默认:<button class='btn error-btn'>启用</button></dd>
-        <dd class='font-t4'>禁用:<button class='btn primary-btn disabled' disabled>禁用</button></dd>
+        <dd class='font-t4'>默认:<button class='btn error-btn'>删除</button></dd>
+        <dd class='font-t4'>禁用:<button class='btn error-btn disabled-btn' disabled>禁用</button></dd>
       </dl>
       <dl>
-        <dd class='font-t4'>默认:<button class='btn auxiliary-btn'>启用</button></dd>
-        <dd class='font-t4'>禁用:<button class='btn primary-btn disabled' disabled>禁用</button></dd>
+        <dd class='font-t4'>默认:<button class='btn auxiliary-btn'>重置</button></dd>
+        <dd class='font-t4'>禁用:<button class='btn auxiliary-btn disabled-btn' disabled>禁用</button></dd>
       </dl>
       <dl>
-        <dd class='font-t4'>默认:<button class='btn'>启用</butto></dd>
+        <dd class='font-t4'>默认:<button class='btn'>取消</butto></dd>
+          <dd class='font-t4'>禁用:<button class='btn disabled-btn' disabled>禁用</button></dd>
       </dl>
     </aside>
 
-    <aside class="pagenation clearfix">
-      <header>
-        <span class='extra font-t1'>翻页</span>
-      </header>
-    </aside>
+    <div class="aside">
+        <aside class="pagenation">
+            <header>
+              <span class='extra font-t1'>翻页</span>
+            </header>
+              <dl class='page'>
+                <dd class='la disabled'></dd>
+                <dd class='disabled'>1</dd>
+                <dd class='active'>2</dd>
+                <dd>3</dd>
+                <dd class='ra'></dd>
+              </dl>
+          </aside>
+      
+          <aside class="checkbox-radio">
+            <header>
+              <span class="extra font-t1">单选框&&复选框</span>
+            </header>
+          </aside>
+    </div>
+
+
 
   </section>
 

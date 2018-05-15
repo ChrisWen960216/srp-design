@@ -23,6 +23,10 @@ module.exports = {
         test: /\.less$/,
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: ['url-loader'],
+      },
     ],
   },
   plugins: [
@@ -32,7 +36,6 @@ module.exports = {
       },
       hash: true,
       template: './src/index.html',
-
     }),
   ],
   devServer: {
