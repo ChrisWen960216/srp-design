@@ -1,0 +1,40 @@
+@import './variables.less';
+
+.checkbox{
+  position: relative;
+  display: inline-block;
+   input[type=checkbox]{
+       display: none;
+   }
+   span{
+       width: 13px;
+       height: 13px;
+       font-size: 13px;
+       line-height: 13px;
+       border: 1px solid @base-color-1;
+       position: absolute;
+       margin-top: 4px;
+       margin-left: -20px;
+       margin-bottom: 0;
+       display: block;
+   }
+   label{
+       padding-left: 30px;
+       display: inline-block;
+       cursor: pointer;
+   }
+   input[type=checkbox]:checked{
+       &+span{
+           background: url('../img/correct.png')center no-repeat;
+       }
+   }
+   &.disabled{
+     label{
+       cursor: not-allowed;
+     }
+       color: @base-color-1;
+       span{
+           background-color: @base-color-1;
+       }
+   }
+}

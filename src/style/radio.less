@@ -1,0 +1,40 @@
+.radio{
+  position: relative;
+    display: inline-block;
+     input[type=radio]{
+         display: none;
+     }
+     span{
+         width: 13px;
+         height: 13px;
+         font-size: 13px;
+         line-height: 13px;
+         border: 1px solid @base-color-1;
+         border-radius: 50%;
+         position: absolute;
+         margin-top: 4px;
+         margin-left: -20px;
+         margin-bottom: 0;
+         display: block;
+     }
+     label{
+         padding-left: 30px;
+         display: inline-block;
+         cursor: pointer;
+     }
+     input[type=radio]:checked{
+         &+span{
+             background: url('../img/selected.png')center no-repeat;
+             background-position: 49% 45%;
+         }
+     }
+     &.disabled{
+       label{
+        cursor: not-allowed;
+       }
+        color: @base-color-1;
+        span{
+            background-color: @base-color-1;
+        }
+    }
+}
