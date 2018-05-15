@@ -1,0 +1,42 @@
+@import './variables.less';
+@import './init.less';
+
+.input-style(@border-color){
+  border: 1px solid @border-color;
+}
+
+.placeholder(@color: @input-color-placeholder) {
+  &::-moz-placeholder {
+    color: @color;
+    opacity: 1;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &:-ms-input-placeholder { 
+    color: @color;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &::-webkit-input-placeholder  { 
+    color: @color;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+.input{
+  box-sizing: border-box;
+  width: 208px;
+  font-size: @font-size-5;
+  padding: 6px 0 6px 15px;
+  transition: .3s;
+  .input-style(@base-color-2);
+  .placeholder(@font-color-3);
+}
+.input:hover{
+  .input-style(@font-color-2);
+}
+.input:focus{
+  .focus-init();
+  .input-style(@primary-color);
+}
