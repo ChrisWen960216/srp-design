@@ -40,3 +40,14 @@
   .focus-init();
   .input-style(@primary-color);
 }
+
+.input-disabled{
+  cursor: not-allowed;
+  background-color:@base-color-1;
+}
+.input-disabled:focus{
+  .focus-init();
+}
+.input-disabled:hover{
+  .input-style(@base-color-2);
+}
