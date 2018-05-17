@@ -1,0 +1,47 @@
+@import './variables.less';
+@import './init.less';
+.select-style(@border-color) {
+  border: 1px solid @border-color;
+}
+.select-init{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 208px;
+  font-size: @font-size-5;
+  color: @font-color-3;
+  padding: 6px 0 6px 15px;
+  transition: .3s;
+  cursor: pointer;
+  .select-init();
+  .select-style(@base-color-2);
+  .placeholder {
+    display: none;
+  }
+  option {
+    font-size: @font-size-5;
+    color: @font-color-2;
+    height: 30px;
+    display: block;
+    padding: 6px 0 6px 15px;
+  }
+  &:hover {
+    .select-style(@font-color-2);
+  }
+  &:focus {
+    .focus-init();
+    .select-style(@primary-color);
+  }
+}
+
+.select-disabled{
+  background-color: @base-color-1;
+  &:hover{
+    cursor: not-allowed !important;
+    .select-style(@base-color-2);
+  }
+}

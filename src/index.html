@@ -138,7 +138,7 @@
             </header>
             <dl class='page'>
               <dd class='la disabled'></dd>
-              <dd class='disabled'>1</dd>
+              <dd>1</dd>
               <dd class='active'>2</dd>
               <dd>3</dd>
               <dd class='ra'></dd>
@@ -195,12 +195,82 @@
           </header>
           <dl>
             <dd class="font-4">默认:
-              <input class='input' type="text" placeholder="测试一下">
+              <div class='input'>
+                <input type="text" placeholder="没有字的input" />
+                <div class=''></div>
+                <div class='search'></div>
+              </div>
             </dd>
             <dd class="font-4">禁用:
-              <input class='input input-disabled' type="text" placeholder="测试一下" disabled>
+              <div class='input input-disabled'>
+                <input type="text" placeholder="测试一下" disabled/>
+                <div class='delete'></div>
+                <div class='search'></div>
+              </div>
             </dd>
-            <dd class="font-4">搜索:</dd>
+            <dd class="font-4">默认:
+              <div class='input'>
+                <input type="text" placeholder="测试一下" value='有字的input' />
+                <div class='delete'></div>
+                <div class='search'></div>
+              </div>
+            </dd>
+            <dd class="font-4">
+              搜索:
+              <div class='input'>
+                <input type="text" placeholder="测试一下" value='展示搜索框的input' />
+                <div class='delete'></div>
+                <div class='search'></div>
+                <dl>
+                  <dd>
+                    <span class='search-title'>灯杆</span>
+                    疏影路灯杆一号
+                    <div class="base-line"></div>
+                  </dd>
+                  <dd>
+                    <span class='search-title'>灯杆</span>
+                    疏影路灯杆一号
+                    <div class="base-line"></div>
+                  </dd>
+                  <dd>
+                    <span class='search-title'>灯杆</span>
+                    疏影路灯杆一号
+                    <div class="base-line"></div>
+                  </dd>
+                  <dd>
+                    <span class='search-title'>灯杆</span>
+                    疏影路灯杆一号
+                    <div class="base-line"></div>
+                  </dd>
+                  <dd>
+                    <span class='search-title'>灯杆</span>
+                    疏影路灯杆一号
+                    <div class="base-line"></div>
+                  </dd>
+                </dl>
+              </div>
+            </dd>
+          </dl>
+        </aside>
+        <aside class='selects'>
+          <header>
+            <span class="extra font-t1">下拉框</span>
+          </header>
+          <dl>
+            <dd class='font-t4'>
+              默认:
+              <select class='select' >
+                <option value="placeholder" class='placeholder' selected>选择设备类别</option>
+              </select>
+            </dd>
+            <dd class='font-t4'>
+              禁用:
+              <select class='select select-disabled' disabled>
+                  <option value="placeholder" class='placeholder' selected>选择设备类别</option>
+                </select>
+            </dd>
+            <dd class='font-t4'>选择:</dd>
+            <dd class='font-t4'>多级选择:</dd>
           </dl>
         </aside>
       </div>

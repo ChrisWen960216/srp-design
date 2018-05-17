@@ -6,6 +6,7 @@
 @import './checkbox.less';
 @import './radio.less';
 @import './input.less';
+@import './select.less';
 
 @font-face {
   font-family: title-font;
@@ -136,11 +137,24 @@
         }
       }
     }
+    .selects{
+      margin-left: 190px;
+      position: absolute;
+      dl{
+        dd{
+          margin: 20px 0;
+          .select{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
 
     .top-container{
       margin-bottom: 70px;
     }
     .bottom-container{
+      position: relative;
       border: 1px solid blue;
     }
   }
