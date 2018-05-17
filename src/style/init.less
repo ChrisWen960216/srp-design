@@ -3,3 +3,31 @@
 .focus-init(){
   outline:none;
 }
+
+.input-style(@border-color) {
+  border: 1px solid @border-color;
+}
+
+.option-style(@font-color;@background-color){
+  background: @background-color;
+  color: @font-color;
+}
+
+.placeholder(@color: @input-color-placeholder) {
+  &::-moz-placeholder {
+    color: @color;
+    opacity: 1;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &::-webkit-input-placeholder {
+    color: @color;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

@@ -259,18 +259,41 @@
           <dl>
             <dd class='font-t4'>
               默认:
-              <select class='select' >
-                <option value="placeholder" class='placeholder' selected>选择设备类别</option>
-              </select>
+              <div class="select">
+                <input type="text" placeholder="选择设备类别" readonly>
+                <div class='select-arrow'></div>
+              </div>
             </dd>
             <dd class='font-t4'>
               禁用:
-              <select class='select select-disabled' disabled>
-                  <option value="placeholder" class='placeholder' selected>选择设备类别</option>
-                </select>
+              <div class="select select-disabled">
+                  <input type="text" placeholder="选择设备类别" readonly disbaled>
+                  <div class='select-arrow'></div>
+                </div>
             </dd>
-            <dd class='font-t4'>选择:</dd>
-            <dd class='font-t4'>多级选择:</dd>
+            <dd class='font-t4'>
+              选择:
+              <div class="select">
+                  <input type="text" placeholder="选择设备类别" readonly>
+                  <div class='select-arrow'></div>
+                  <dl>
+                    <dd class='first-ops option'>中国
+                      <div class="arrow"></div>
+                    </dd>
+                    <dd class='second-ops option'>上海
+                        <div class="arrow"></div>
+                    </dd>
+                    <dd class='third-ops option'>徐汇区
+                        <div class="arrow open"></div>
+                    </dd>
+                    <dd class='third-ops option'>闵行区
+                        <div class="arrow"></div>
+                    </dd>
+                    <dd class='option'>莘庄</dd>
+                    <dd class='option'>颛桥</dd>
+                  </dl>
+                </div>
+            </dd>
           </dl>
         </aside>
       </div>
