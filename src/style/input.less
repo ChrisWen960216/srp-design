@@ -1,7 +1,5 @@
 @import './variables.less';
 @import './init.less';
-
-
 .input {
   display: inline-block;
   position: relative;
@@ -71,11 +69,14 @@
     }
   }
   dl {
+    box-sizing: border-box;
     width: 100%;
     margin: 0;
     padding: 0;
     position: absolute;
     top: 100%;
+    .input-style(@base-color-2);
+    border-top:none;
     dd {
       padding: 0 15px;
       height: 30px;
@@ -95,5 +96,27 @@
         background-color: #E3FAFF
       }
     }
+  }
+}
+
+.input-search {
+  .delete {
+    margin-right: 15px;
+  }
+}
+
+.input-error {
+  input {
+    .input-style(@error-color);
+    &:focus {
+      .input-style(@error-color);
+    }
+    &:hover {
+      .input-style(@error-color);
+    }
+  }
+  .delete {
+    background: url('../img/fault.png')center no-repeat;
+    margin-right: 15px;
   }
 }
