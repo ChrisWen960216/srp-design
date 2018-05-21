@@ -9,6 +9,8 @@
 @import './input.less';
 @import './select.less';
 @import './topMenu.less';
+@import './leftMenu.less';
+@import './rightMenu.less';
 
 #root {
   margin: 0 70px;
@@ -177,6 +179,52 @@
         }
       }
     }
+    .left-menus{
+      header{
+        margin-top: 72px;
+        margin-bottom: 44px;
+      }
+      .left-menus_container{
+        display: flex;
+        > div{
+          width: 180px;
+          margin: 0 20px;
+          box-sizing: border-box;
+          header{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+          }
+        }
+        > div:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+    .right-menus{
+      > header{
+        margin-top: 72px;
+        margin-bottom: 44px;
+      }
+      .right-menus_container{
+        display: flex;
+        > div{
+          width: 300px;
+          height: 600px;
+          border: 1px solid red;
+          margin: 0 70px;
+          > header{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+          }
+        }
+        > div:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+
   }
 
   .modal{

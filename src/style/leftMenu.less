@@ -1,0 +1,109 @@
+@import './variables.less';
+@import './index.less';
+
+.left-menu{
+  width: 180px;
+  > dl{
+    margin: 0;
+    padding: 0;
+    > dd{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 40px;
+      width: 100%;
+      background: @base-color-2;
+      box-sizing: border-box;
+      transition: .3s;
+      cursor: pointer;
+      .arrow{
+        width: 8px;
+        height: 8px;
+        margin: 16px 10px 16px 30px;
+        background: url('/img/select.png')center center no-repeat;
+        // transition: .3s;
+      }
+      .close{
+        transform: rotate(-90deg);
+      }
+      .open {
+        transform: rotate(0deg);
+      }
+      .desc{
+        line-height: 40px;
+        height: 40px;
+      }
+      &:hover{
+        background: #E3FAFF;
+      }
+    }
+    .secondary{
+      background: @base-color-1;
+      .icon{
+        width: 16px;
+        height: 16px;
+        margin: 12px 10px 12px 30px;
+      }
+      .warning{
+        background: url('/img/warning.png')center center no-repeat;
+      }
+      .error{
+        background: url('/img/error.png')center center no-repeat;
+      }
+    }
+
+    .active{
+      background: linear-gradient(to right, @primary-color, #00D8FF);
+      .arrow{
+        background: url('/img/select-active.png')center center no-repeat;
+      }
+      .warning{
+        background: url('/img/warning-active.png')center center no-repeat;
+      }
+      .error{
+        background: url('/img/error-active.png')center center no-repeat;
+      }
+      span{
+        color: white !important;
+      }
+      &:hover{
+        background: linear-gradient(to right, @primary-color, #00D8FF);
+      } 
+    }
+  }
+}
+
+.no-icon{
+  > dl{
+    > dd{
+      > span{
+        margin-left: 30px;
+      }
+      .dot{
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin: 19px 8px 19px 30px;
+      }
+    }
+  }
+  .secondary{
+    > span{
+      margin-left: 0;
+    }
+  }
+  .secondary.active{
+    border-left: 4px solid @primary-color;
+    background: @base-color-1;
+    .dot{
+      margin-left: 26px;
+    }
+    > span{
+      color: @font-color-1 !important;
+    }
+    &:hover{
+      background: #E3FAFF;;
+    }
+  }
+}

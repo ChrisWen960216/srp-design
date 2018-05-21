@@ -259,21 +259,21 @@
           <dl>
             <dd class='font-t4'>
               默认:
-              <div class="select">
+              <div class="select-form">
                 <input type="text" placeholder="选择设备类别" readonly>
                 <div class='select-arrow'></div>
               </div>
             </dd>
             <dd class='font-t4'>
               禁用:
-              <div class="select select-disabled">
+              <div class="select-form select-disabled">
                 <input type="text" placeholder="选择设备类别" readonly disbaled>
                 <div class='select-arrow'></div>
               </div>
             </dd>
             <dd class='font-t4'>
               选择:
-              <div class="select">
+              <div class="select-form">
                 <input type="text" placeholder="选择设备类别" readonly>
                 <div class='select-arrow'></div>
                 <dl>
@@ -362,26 +362,193 @@
         </div>
 
         <div class="inside-container">
-            <span class='extra font-t4'>内页标注:</span>
-            <div class="top-menu">
-                <div class="guider">
-                  <div class="logo-menu home"></div>
-                  <div class="divide-dark"></div>
-                  <div class="introduce introduce-module desc font-t4">资产管理</div>
-                </div>
-                <div class="user-center">
-                  <div class="logo-menu flag"></div>
-                  <div class="divide-dark"></div>
-                  <div class="logo-menu message"></div>
-                  <div class="divide-dark"></div>
-                  <div class="logo-menu user"></div>
-                </div>
-              </div>
+          <span class='extra font-t4'>内页标注:</span>
+          <div class="top-menu">
+            <div class="guider">
+              <div class="logo-menu home"></div>
+              <div class="divide-dark"></div>
+              <div class="introduce introduce-module desc font-t4">资产管理</div>
+            </div>
+            <div class="user-center">
+              <div class="logo-menu flag"></div>
+              <div class="divide-dark"></div>
+              <div class="logo-menu message"></div>
+              <div class="divide-dark"></div>
+              <div class="logo-menu user"></div>
+            </div>
+          </div>
         </div>
 
       </aside>
 
-      <aside class="left-menus"></aside>
+      <aside class="left-menus">
+        <header>
+          <span class="extra font-t1">左侧边栏</span>
+        </header>
+
+        <div class="left-menus_container">
+          <div>
+            <header>
+              <span class="extra font-t4">标注:</span>
+            </header>
+            <div class="left-menu">
+              <dl>
+                <dd>
+                  <div class="arrow close"></div>
+                  <span class='font-color-1 font-t5 desc'>设备配置</span>
+                </dd>
+                <dd>
+                  <div class="arrow close"></div>
+                  <span class='font-color-1 font-t5 desc'>控制策略</span>
+                </dd>
+                <dd>
+                  <div class="arrow close"></div>
+                  <span class='font-color-1 font-t5 desc'>服务监控</span>
+                </dd>
+                <dd>
+                  <div class="arrow close"></div>
+                  <span class='font-color-1 font-t5 desc'>系统配置</span>
+                </dd>
+                <dd>
+                  <div class="arrow close"></div>
+                  <span class='font-color-1 font-t5 desc'>设备监控</span>
+                </dd>
+                <dd>
+                  <div class="arrow close"></div>
+                  <span class='font-color-1 font-t5 desc'>日志查询</span>
+                </dd>
+                <dd class='active'>
+                  <div class="arrow open"></div>
+                  <span class='font-color-1 font-t5 desc'>故障管理</span>
+                </dd>
+                <dd class='secondary'>
+                    <div class="warning icon"></div>
+                    <span class='font-color-1 font-t5 desc'>告警</span>
+                </dd>
+                <dd class='secondary active'>
+                    <div class="error icon"></div>
+                    <span class='font-color-1 font-t5 desc'>故障</span>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div>
+              <header>
+                <span class="extra font-t4">选中2:</span>
+              </header>
+              <div class="left-menu no-icon">
+                <dl>
+                  <dd>
+                    <span class='font-color-1 font-t5 desc'>场景1</span>
+                  </dd>
+                  <dd class='active'>
+                    <span class='font-color-1 font-t5 desc'>场景2</span>
+                  </dd>
+                  <dd class='secondary'>
+                      <div class='dot'></div>
+                      <span class='font-color-1 font-t5 desc'>区域1</span>
+                  </dd>
+                  <dd class='secondary active'>
+                      <div class='dot'></div>
+                      <span class='font-color-1 font-t5 desc'>区域2</span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+        </div>
+      </aside>
+
+      <aside class="right-menus">
+        <header>
+          <span class="extra font-t1">右侧边栏</span>
+          <span class='extra'>(不包含媒体发布)</span>
+        </header>
+
+        <div class="right-menus_container">
+          <div>
+            <span class='extra font-t4'>标注:</span>
+            <div class='right-menu'>
+              <header>
+                <div class='top-icon'></div>
+              </header>
+              <aside class="menus_contanier select">
+                <header>
+                  <div class="menu-species">
+                    <div class="menu-icon left-icon"></div>
+                    <div class="font-color-1 font-t5 menu-introduce">选择策略</div>
+                  </div>
+                  <div class="menu-icon arrow"></div>
+                </header>
+                <div class='menu_content'>
+                  <dl>
+                    <dd>
+                      <div class="menu_content-introduce font-color-1 font-t5">冬季路灯使用指南</div>
+                      <div class="btn-group">
+                          <button class='btn error-btn'>暂停</button>
+                          <button class='btn primary-btn'>使用</button>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+              </aside>
+
+              <aside class="menus_contanier argument">
+                  <header>
+                    <div class="menu-species">
+                      <div class="menu-icon left-icon"></div>
+                      <div class="font-color-1 font-t5 menu-introduce">参数</div>
+                    </div>
+                    <div class="menu-icon arrow"></div>
+                  </header>
+                  <div class='menu_content'>
+                    <dl>
+                      <dd>
+                        <span class="font-color-1 font-t5">标识</span>
+                        <div class="select-form">
+                            <input type="text" value='日出' readonly>
+                            <div class='select-arrow'></div>
+                          </div>
+                      </dd>
+                      <dd>
+                          <span class="font-color-1 font-t5">亮度</span>
+                          <div class="select-form">
+                              <input type="text" value='10' readonly>
+                              <div class='select-arrow'></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <span class="font-color-1 font-t5">时间差</span>
+                            <div class='input'>
+                                <input type="text" value='10秒' readonly />
+                              </div>
+                          </dd>
+                    </dl>
+                  </div>
+                </aside>
+
+                <aside class="menus_contanier task">
+                    <header>
+                      <div class="menu-species">
+                        <div class="menu-icon left-icon"></div>
+                        <div class="font-color-1 font-t5 menu-introduce">任务记录</div>
+                      </div>
+                      <div class="menu-icon arrow"></div>
+                    </header>
+                    <div class='menu_content'>
+                      <dl>
+                        <dd>
+                    
+                        </dd>
+                      </dl>
+                    </div>
+                  </aside>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+
+      </aside>
     </section>
 
     <section class="modal">

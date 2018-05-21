@@ -1,0 +1,117 @@
+@import './variables.less';
+@import './init.less';
+.right-menu {
+  >header {
+    // margin: 0;
+    height: 30px;
+    border: 1px solid @base-color-3;
+    background: @base-color-3;
+    .top-icon {
+      width: 16px;
+      height: 16px;
+      margin: 7px auto;
+      background: url('/img/rightMenu/top-icon.png')center center no-repeat;
+    }
+  }
+  .menus_contanier {
+    >header {
+      height: 40px;
+      background: @base-color-2;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      .menu-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: 12px 20px;
+      }
+      .arrow {
+        background: url('/img/white-top-arrow.png')center center no-repeat;
+      }
+      .menu-species {
+        display: flex;
+        .menu-introduce {
+          display: inline-block;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+    .menu_content {
+      background: @base-color-1;
+      >dl {
+        padding: 0;
+        margin: 0;
+        >dd {
+          // margin: 20px;
+          padding: 10px 20px;
+          margin: 0;
+          display: flex;
+        }
+        > dd:first-child{
+          padding-top: 20px;
+        }
+        > dd:last-child{
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    &.select {
+      .menu_content-introduce {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 0;
+        margin-right: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .btn-group {
+        display: flex;
+        >button:nth-child(2) {
+          margin-left: 20px;
+        }
+      }
+      .left-icon {
+        background: url('/img/rightMenu/select.png')center center no-repeat;
+      }
+    }
+    &.argument {
+      .menu_content{
+        > dl{
+          > dd{
+            > span:first-child{
+              width: 60px;
+              height: 30px;
+              line-height: 30px;
+              text-align: right;
+              margin-right: 20px;
+            }
+            .select-form,.select-form input,.input,.input input{
+              width: 180px;
+              height: 30px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      .left-icon {
+        background: url('/img/rightMenu/argument.png')center center no-repeat;
+      }
+    }
+    &.task {
+      .left-icon {
+        background: url('/img/rightMenu/task.png')center center no-repeat;
+      }
+    }
+    &.close{
+      .arrow{
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+}
