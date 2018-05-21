@@ -8,7 +8,7 @@ module.exports = {
     entry: path.join(__dirname, '../src/index.js'),
   },
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.join(__dirname, '../src'),
   },
   module: {
     rules: [
@@ -24,7 +24,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
       {
-        test: /\.(png|jpg|gif|ttf)$/,
+        test: /\.(png|jpg|gif|ttf|ttc)$/,
         use: ['url-loader'],
       },
     ],
@@ -40,7 +40,7 @@ module.exports = {
   ],
   devServer: {
     // 设置基本目录结构
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: path.join(__dirname, '../src'),
     // 服务器的IP地址，可以使用IP也可以使用localhost
     host: '0.0.0.0',
     // 服务端压缩是否开启

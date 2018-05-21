@@ -1,4 +1,5 @@
 @import './normalize.less';
+@import './variables.less';
 @import './font.less';
 @import './color.less';
 @import './button.less';
@@ -7,10 +8,7 @@
 @import './radio.less';
 @import './input.less';
 @import './select.less';
-@font-face {
-  font-family: title-font;
-  src: url('title.ttf')
-}
+@import './topMenu.less';
 
 #root {
   margin: 0 70px;
@@ -20,6 +18,9 @@
     font-size: 45px;
     margin: 72px 0 60px 0;
     font-family: title-font;
+  }
+  .extra {
+    color: #B6BAC1;
   }
   .font aside {
     display: flex;
@@ -74,9 +75,7 @@
   .component aside {
     display: inline-block;
     color: #BBBDC2;
-    .extra {
-      color: #B6BAC1;
-    }
+
   }
   .component {
     .button {
@@ -136,12 +135,19 @@
         }
       }
     }
-    .selects {
+    .selects,
+    .inputs {
       margin-left: 130px;
       position: absolute;
       >dl {
         >dd {
           margin: 20px 0;
+        }
+      }
+    }
+    .selects {
+      >dl {
+        >dd {
           .select {
             margin-left: 10px;
           }
@@ -149,19 +155,60 @@
       }
     }
     .inputs {
-      position: absolute;
       margin-left: 530px;
-      >dl {
-        >dd {
-          margin: 20px 0;
-        }
-      }
     }
     .top-container {
       margin-bottom: 70px;
     }
     .bottom-container {
       position: relative;
+    }
+  }
+
+  .display{
+    margin-top: 200px;
+    .top-menus{
+      .main-container,.inside-container{
+        margin-top: 42px;
+        > span:first-child{
+          display: block;
+          line-height: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .modal{
+    background: #EAEEF2;
+    header{
+      span:first-child{
+        display: inline-block;
+      }
+      .font-t4{
+        display: inline-block;
+        margin-left: 42px;
+        p{
+          line-height: 18px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    .modal-content{
+      display: flex;
+      justify-content: start;
+      > div{
+        border: 1px solid red;
+        width: 420px;
+        margin-top: 70px;
+      }
+      > div:first-child{
+        margin-right: 20px;
+      }
+      > div:nth-chiild(2){
+        margin-left: 20px;
+      }
     }
   }
   .clearfix::after {
