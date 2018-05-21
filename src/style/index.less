@@ -11,7 +11,6 @@
 @import './topMenu.less';
 @import './leftMenu.less';
 @import './rightMenu.less';
-
 #root {
   margin: 0 70px;
   min-width: 1325px;
@@ -77,7 +76,6 @@
   .component aside {
     display: inline-block;
     color: #BBBDC2;
-
   }
   .component {
     .button {
@@ -166,95 +164,95 @@
       position: relative;
     }
   }
-
-  .display{
+  .display {
     margin-top: 200px;
-    .top-menus{
-      .main-container,.inside-container{
+    .top-menus {
+      .main-container,
+      .inside-container {
         margin-top: 42px;
-        > span:first-child{
+        >span:first-child {
           display: block;
           line-height: 20px;
           margin-bottom: 20px;
         }
       }
     }
-    .left-menus{
-      header{
+    .left-menus {
+      header {
         margin-top: 72px;
         margin-bottom: 44px;
       }
-      .left-menus_container{
+      .left-menus_container {
         display: flex;
-        > div{
+        >div {
           width: 180px;
           margin: 0 20px;
           box-sizing: border-box;
-          header{
+          header {
             margin: 0;
             padding: 0;
             margin-bottom: 10px;
           }
         }
-        > div:first-child{
+        >div:first-child {
           margin-left: 0;
         }
       }
     }
-    .right-menus{
-      > header{
+    .right-menus {
+      >header {
         margin-top: 72px;
         margin-bottom: 44px;
       }
-      .right-menus_container{
+      .right-menus_container {
         display: flex;
-        > div{
-          width: 300px;
-          height: 600px;
-          border: 1px solid red;
+        > div {
+          height: 740px;
           margin: 0 70px;
-          > header{
+          > span {
+            display: inline-block;
+            margin-bottom: 10px;
+          }
+          > header {
             margin: 0;
             padding: 0;
             margin-bottom: 10px;
           }
         }
-        > div:first-child{
+        > div:first-child {
           margin-left: 0;
         }
       }
     }
-
   }
-
-  .modal{
+  .modal {
     background: #EAEEF2;
-    header{
-      span:first-child{
+    header {
+      span:first-child {
         display: inline-block;
       }
-      .font-t4{
+      .font-t4 {
         display: inline-block;
         margin-left: 42px;
-        p{
+        p {
           line-height: 18px;
           margin: 0;
           padding: 0;
         }
       }
     }
-    .modal-content{
+    .modal-content {
       display: flex;
       justify-content: start;
-      > div{
+      >div {
         border: 1px solid red;
         width: 420px;
         margin-top: 70px;
       }
-      > div:first-child{
+      >div:first-child {
         margin-right: 20px;
       }
-      > div:nth-chiild(2){
+      >div:nth-chiild(2) {
         margin-left: 20px;
       }
     }

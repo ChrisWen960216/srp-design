@@ -40,7 +40,7 @@
     }
     .menu_content {
       background: @base-color-1;
-      >dl {
+      >dl:first-child {
         padding: 0;
         margin: 0;
         >dd {
@@ -81,7 +81,7 @@
     }
     &.argument {
       .menu_content{
-        > dl{
+        > dl:first-child{
           > dd{
             > span:first-child{
               width: 60px;
@@ -103,6 +103,24 @@
       }
     }
     &.task {
+      .menu_content{
+        > dl:first-child{
+          > dd{
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            margin: 0 20px;
+            border-bottom: 1px solid @base-color-2;
+          }
+        }
+        .page{
+          margin-top: 70px;
+          padding-bottom: 20px;
+          justify-content: center;
+        }
+      }
       .left-icon {
         background: url('/img/rightMenu/task.png')center center no-repeat;
       }
@@ -110,6 +128,49 @@
     &.close{
       .arrow{
         transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &.close{
+    width: 60px;
+    height: 706px;
+    background: @base-color-1;
+    > dl{
+      margin: 0;
+      padding: 0;
+      > dd{
+        cursor: pointer;
+        transition: .3s;
+        margin: 0;
+        padding: 0;
+        background: @base-color-2;
+        > div{
+          width: 60px;
+          height: 40px;
+        }
+        &:hover{
+          background: #E3FAFF;
+        }
+      }
+      > dd:first-child{
+        background: @base-color-3;
+        > div{
+          height: 30px;
+        }
+      }
+      .top{
+        transform: rotate(-90deg);
+        background: url('/img/rightMenu/top-icon.png')center center no-repeat;
+      }
+      .select{
+        background: url('/img/rightMenu/select.png')center center no-repeat;
+      }
+      .argument{
+        background: url('/img/rightMenu/argument.png')center center no-repeat;
+      }
+      .task{
+        background: url('/img/rightMenu/task.png')center center no-repeat;
       }
     }
   }
