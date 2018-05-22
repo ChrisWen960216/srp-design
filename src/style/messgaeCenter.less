@@ -1,0 +1,97 @@
+@import './variables.less';
+@import './init.less';
+.messageCenter {
+  width: 300px;
+  >dl {
+    margin: 0;
+    padding: 0;
+    >dd {
+      margin: 0;
+      padding: 0;
+      >header {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        background: @base-color-2;
+        .status {
+          display: flex;
+          .icon {
+            width: 16px;
+            height: 16px;
+            margin: 12px 10px 12px 20px;
+          }
+        }
+        .delete {
+          width: 16px;
+          height: 16px;
+          margin: 12px 20px;
+          background: url('/img/gray-delete.png')center center no-repeat;
+          cursor: pointer;
+        }
+      }
+      .message_container {
+        background-color: @base-color-1;
+        display: flex;
+        .message_content {
+          margin: 15px 10px 15px 20px;
+          width: 235px;
+          line-height: 25px;
+        }
+        .arrow {
+          width: 16px;
+          height: 16px;
+          margin: 20px 0px;
+          background: url('/img/top-arrow.png')center center no-repeat;
+          cursor: pointer;
+          transition: .3s;
+        }
+      }
+      &.warning,
+      &.success,
+      &.error {
+        .status{
+          span {
+            line-height: 40px;
+            height: 40px;
+          }
+        }
+        &.close {
+          .message_content {
+            height: 25px;
+            overflow: hidden;
+          }
+          .arrow {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+      &.warning {
+        header {
+          .status {
+            .icon {
+              background: url('/img/messageCenter/warning.png')center center no-repeat;
+            }
+          }
+        }
+      }
+      &.success {
+        header {
+          .status {
+            .icon {
+              background: url('/img/messageCenter/success.png')center center no-repeat;
+            }
+          }
+        }
+      }
+      &.error {
+        header {
+          .status {
+            .icon {
+              background: url('/img/messageCenter/error.png')center center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,6 +11,9 @@
 @import './topMenu.less';
 @import './leftMenu.less';
 @import './rightMenu.less';
+@import './messgaeCenter.less';
+@import './messageModal.less';
+
 #root {
   margin: 0 70px;
   min-width: 1325px;
@@ -200,27 +203,67 @@
       }
     }
     .right-menus {
+      float: left;
       >header {
         margin-top: 72px;
         margin-bottom: 44px;
       }
       .right-menus_container {
         display: flex;
-        > div {
+        >div {
           height: 740px;
           margin: 0 70px;
-          > span {
+          >span {
             display: inline-block;
             margin-bottom: 10px;
           }
-          > header {
+          >header {
             margin: 0;
             padding: 0;
             margin-bottom: 10px;
           }
         }
-        > div:first-child {
+        >div:first-child {
           margin-left: 0;
+        }
+      }
+    }
+    .messages {
+      float: right;
+      width: 800px;
+      height: 600px;
+      .message-centers {
+        >header:first-child {
+          margin-top: 72px;
+          margin-bottom: 44px;
+        }
+        .message-centers_container {
+          display: flex;
+          >div {
+            width: 180px;
+            margin: 0 20px;
+            box-sizing: border-box;
+            >span {
+              display: inline-block;
+              margin-bottom: 10px;
+            }
+          }
+          >div:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+      .message-modals {
+        >header:first-child {
+          margin-top: 72px;
+          margin-bottom: 44px;
+        }
+        .message-modals_container {
+          >div:first-child {
+            >header {
+              margin-bottom: 10px;
+            }
+          }
         }
       }
     }
@@ -245,7 +288,6 @@
       display: flex;
       justify-content: start;
       >div {
-        border: 1px solid red;
         width: 420px;
         margin-top: 70px;
       }

@@ -1,0 +1,30 @@
+@import './variables.less';
+@import './init.less';
+@import './messgaeCenter.less';
+
+.message-modal{
+  .messageCenter{
+    box-shadow: 0 10px 5px rgba(80,80,80,.2);
+    .warning{
+      .message_container{
+        border-left: 4px solid #FCE326;
+      }
+    }
+    .error{
+      .message_container{
+        border-left: 4px solid @error-color;
+      }
+    }
+    .success{
+      .message_container{
+        border-left: 4px solid #43D480;
+      }
+    }
+    .message_container{
+      .message_content{
+        margin: 20px;
+        width: auto;
+      }
+    }
+  }
+}
