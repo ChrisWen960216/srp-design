@@ -1,0 +1,14 @@
+.createGrid(){
+  .col(@index) when (@index =< 10){
+   // .table-col-1,2,3,4,5
+    .table-col-@{index}{
+      td,th{
+        width: 100% / @index;
+      }
+    }
+    .col(@index+1);
+  }
+  .col(1)
+}
+
+.createGrid();
