@@ -9,8 +9,15 @@
 </head>
 
 <body>
+  <div class="top-menu">
+    <div class="guider">
+      <div class="logo main-logo"></div>
+      <div class="introduce desc font-t1">StarRiver</div>
+      <div class="divide"></div>
+      <div class="introduce-extra desc font-t3">智慧路灯管理系统</div>
+    </div>
+  </div>
   <div id="root">
-
     <section class='font'>
       <header>
         <span class='title'>01. 字体规范</span>
@@ -832,7 +839,7 @@
 
     </section>
 
-    <!-- <section class="modal">
+    <section class="modals">
       <header>
         <span class="title">05. 弹窗规范</span>
         <div class='extra font-t4'>
@@ -841,19 +848,609 @@
         </div>
       </header>
 
-      <aside class='small-modal'>
+      <aside class='small-modal-group'>
         <header>
           <span class="extra font-t1">小型弹框(宽度460PX)</span>
         </header>
-        <div class="modal-content">
-          <div></div>
-          <div></div>
+        <div class="modals-content">
+          <div class='left-content'>
+            <div class="small-modal modal">
+              <header>
+                <span class="font-color-2 font-t4">选择文档</span>
+                <div class="close"></div>
+              </header>
+              <div class="modal_container">
+                <header>
+                  <div class='input'>
+                    <input type="text" placeholder="选择文档位置" readonly />
+                    <div class=''></div>
+                    <div class='search link'></div>
+                  </div>
+                </header>
+                <div class="modal_content">
+                  <dl class='name-list'>
+                    <dt class='font-color-1 font-t5'>名称</dt>
+                    <div class="list_container">
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                      <dd class='font-color-2 font-t5'>
+                        <span>文档1</span>
+                        <div class="ops_container">
+                          <div class="icon download"></div>
+                          <div class="icon remove"></div>
+                        </div>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+                <footer>
+                  <button class="btn">取消</button>
+                  <button class="btn primary-btn">确认</button>
+                </footer>
+              </div>
+            </div>
+
+            <div class="small-modal modal">
+              <header>
+                <span class="font-color-2 font-t4">批量升级</span>
+                <div class="close"></div>
+              </header>
+              <div class="modal_container">
+                <header>
+                  <div class='input'>
+                    <input type="text" placeholder="选择文档位置" readonly />
+                    <div class=''></div>
+                    <div class='search link'></div>
+                  </div>
+                </header>
+                <footer>
+                  <button class="btn">取消</button>
+                  <button class="btn primary-btn">确认</button>
+                </footer>
+              </div>
+            </div>
+
+            <div class="small-modal modal">
+              <header>
+                <span class="font-color-2 font-t4">添加/修改设备型号</span>
+                <div class="close"></div>
+              </header>
+              <div class="modal_container">
+                <div class="modal_content">
+                  <dl class="device-list">
+                    <dd class='font-t5 font-color-1'>
+                      <span>型号:</span>
+                      <div class="input-form">
+                        <div class='input'>
+                          <input type="text" placeholder="没有字的input" />
+                        </div>
+                        <span class="error-msg error-color">请输入设备型号</span>
+                      </div>
+                    </dd>
+                    <dd class='font-t5 font-color-1'>
+                      <span>型号:</span>
+                      <div class="input-form">
+                        <div class='input'>
+                          <input type="text" placeholder="没有字的input" />
+                        </div>
+                        <span class="error-msg error-color">请输入设备型号</span>
+                      </div>
+                    </dd>
+                    <dd class='font-t5 font-color-1'>
+                      <span>功率:</span>
+                      <div class="input-form">
+                        <div class='input'>
+                          <input type="text" placeholder="没有字的input" />
+                        </div>
+                        <span class="error-msg error-color">请输入设备型号</span>
+                      </div>
+                    </dd>
+                    <dd class='font-t5 font-color-1'>
+                      <span>使用寿命:</span>
+                      <div class="input-form">
+                        <div class='input'>
+                          <input type="text" placeholder="没有字的input" />
+                        </div>
+                        <span class="error-msg error-color">请输入设备型号</span>
+                      </div>
+                    </dd>
+                    <dd class='font-t5 font-color-1'>
+                      <span>厂商:</span>
+                      <div class="input-form">
+                        <div class='input'>
+                          <input type="text" placeholder="没有字的input" />
+                        </div>
+                        <span class="error-msg error-color">请输入设备型号</span>
+                      </div>
+                    </dd>
+                    <dd class='font-t5 font-color-1'>
+                      <span>描述:</span>
+                      <div class="input-form">
+                        <div class='input'>
+                          <input type="text" placeholder="没有字的input" />
+                        </div>
+                        <span class="error-msg error-color">请输入设备型号</span>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+
+                <footer>
+                  <button class="btn">取消</button>
+                  <button class="btn primary-btn">确认</button>
+                </footer>
+              </div>
+            </div>
+
+            <div class="small-modal modal">
+              <header>
+                <span class="font-color-2 font-t4">批量升级</span>
+                <div class="close"></div>
+              </header>
+              <div class="modal_container">
+                <header>
+                  <div class="ops_container">
+                    <div class="radio">
+                      <label class='font-color-1 font-t5'>
+                        <input type="radio" />
+                        <span></span>所有设备
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label class='font-color-1 font-t5'>
+                        <input type="radio" checked/>
+                        <span></span>指定设备
+                      </label>
+                    </div>
+                  </div>
+                  <div class='input'>
+                    <input type="text" placeholder="选择文档位置" readonly />
+                    <div class=''></div>
+                    <div class='search'></div>
+                  </div>
+                </header>
+                <div class="modal_content device-table">
+                  <div class="table">
+                    <table class='table-col-3'>
+                      <tr class='table-header font-color-1 font-t5'>
+                        <th>设备编号</th>
+                        <th>设备名称</th>
+                        <th>域</th>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                    </table>
+                    <div class="ops_container">
+                      <dl class='page'>
+                        <dd class='la disabled'>
+                          <img src='/img/dis-right.png' alt="">
+                        </dd>
+                        <dd>1</dd>
+                        <dd class='active'>2</dd>
+                        <dd>3</dd>
+                        <dd class='ra'>
+                          <img src='/img/right.png' alt="">
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <footer>
+                  <button class="btn">取消</button>
+                  <button class="btn primary-btn">确认</button>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="small-modal modal">
+              <header>
+                <span class="font-color-2 font-t4">选择设备</span>
+                <div class="close"></div>
+              </header>
+              <div class="modal_container">
+                <header>
+                  <div class="ops_container double-search">
+                    <div class="select-form">
+                      <input type="text" placeholder="选择设备类别" readonly>
+                      <div class='select-arrow'></div>
+                    </div>
+                    <div class="select-form">
+                      <input type="text" placeholder="选择设备类别" readonly>
+                      <div class='select-arrow'></div>
+                    </div>
+
+                  </div>
+                </header>
+                <div class="modal_content device-table">
+                  <div class="table">
+                    <table class='table-col-3'>
+                      <tr class='table-header font-color-1 font-t5'>
+                        <th>设备编号</th>
+                        <th>设备名称</th>
+                        <th>域</th>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                      <tr class='font-color-2 font-t5'>
+                        <td>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" checked />
+                              <span></span>00158D0000CABAD5
+                            </label>
+                          </div>
+                        </td>
+                        <td>灯集中控制器</td>
+                        <td>闵行区</td>
+                      </tr>
+                    </table>
+                    <div class="ops_container">
+                      <dl class='page'>
+                        <dd class='la disabled'>
+                          <img src='/img/dis-right.png' alt="">
+                        </dd>
+                        <dd>1</dd>
+                        <dd class='active'>2</dd>
+                        <dd>3</dd>
+                        <dd class='ra'>
+                          <img src='/img/right.png' alt="">
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <footer>
+                  <button class="btn">取消</button>
+                  <button class="btn primary-btn">确认</button>
+                </footer>
+              </div>
+            </div>
+
+            <div class="small-modal modal">
+                <header>
+                  <span class="font-color-2 font-t4">添加/修改设备型号</span>
+                  <div class="close"></div>
+                </header>
+                <div class="modal_container">
+                  <div class="modal_content">
+                    <dl class="device-list">
+                      <dd class='font-t5 font-color-1'>
+                        <span>组名称:</span>
+                        <div class="input-form">
+                          <div class='input'>
+                            <input type="text" value="时间光标组1" />
+                          </div>
+                          <span class="error-msg error-color">请输入设备型号</span>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <footer>
+                    <button class="btn">取消</button>
+                    <button class="btn primary-btn">确认</button>
+                  </footer>
+                </div>
+              </div>
+
+              <div class="small-modal modal single-upgrade">
+                  <header>
+                    <span class="font-color-2 font-t4">升级</span>
+                    <div class="close"></div>
+                  </header>
+                  <div class="modal_container">
+                    <div class="modal_content">
+                      <dl class="upgrade-list">
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-3 font-t5'>选择升级包</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-3 font-t5'>选择升级包</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-3 font-t5'>选择升级包</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-2 font-t5'>升级包1</dd>
+                        <dd class='font-color-3 font-t5'>选择升级包</dd>
+                        
+                      </dl>
+                      <dl class="upgrade-ops">
+                          <dd><span class='font-color-1 font-t5'>升级时间:</span>
+                              <div class="select-form">
+                                <input type="text" placeholder="选择升级时间" readonly>
+                                <div class='select-arrow'></div>
+                              </div></dd>
+                          <dd><span class='font-color-1 font-t5'>开始时间:</span>
+                              <div class="select-form">
+                                <input type="text" placeholder="选择开始时间" readonly>
+                                <div class='select-arrow'></div>
+                              </div></dd>
+                            
+                      </dl>
+                    </div>
+                    <footer>
+                      <button class="btn">上一步</button>
+                      <button class="btn primary-btn">完成</button>
+                    </footer>
+                  </div>
+                </div>
+
+
+          </div>
         </div>
-
-      </aside>
-
-    </section> -->
-
+  </div>
+  </aside>
+  </section>
   </div>
 </body>
 
