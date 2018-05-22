@@ -26,7 +26,7 @@
     margin: 0 70px;
   }
   min-width: 1325px;
-  .title {
+  > .title {
     display: block;
     font-size: 45px;
     margin: 72px 0 60px 0;
@@ -302,7 +302,8 @@
   .modals {
     background: #EAEEF2;
     >header,
-    .small-modal-group {
+    .small-modal-group,
+    .middle-modal-group {
       margin: 0 70px;
     }
     > header {
@@ -347,6 +348,12 @@
         > div:nth-child(3){
           margin-top: 388px;
         }
+      }
+    }
+    .middle-modal-group{
+      > header{
+        margin-top: 70px;
+        margin-bottom: 70px;
       }
     }
   }

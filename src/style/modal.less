@@ -4,8 +4,14 @@
   width: 460px;
 }
 
+.middle-modal{
+  width: 600px;
+}
+
 .modal {
+  border-radius: 5px;
   background: white;
+  box-shadow: 0 10px 10px rgba(80,80,80,.15);
   >header {
     position: relative;
     text-align: center;
@@ -22,6 +28,14 @@
       width: 16px;
       height: 16px;
       background: url('/img/delete.png')center center no-repeat;
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    >button:last-child {
+      margin: 0 20px;
     }
   }
   .modal_container {
@@ -170,14 +184,6 @@
         }
       }
     }
-    >footer {
-      display: flex;
-      justify-content: flex-end;
-      padding-bottom: 20px;
-      >button:last-child {
-        margin: 0 20px;
-      }
-    }
   }
 
   &.single-upgrade{
@@ -216,6 +222,91 @@
         }
       }
       
+    }
+  }
+
+  &.edit-device{
+    .close{
+      .select{
+        transform: rotate(-90deg);
+      }
+    }
+    .icon{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-top: 7px;
+      margin-right: 10px;
+      &.add{
+        background: url('/img/add.png')center center no-repeat;
+      }
+      &.remove{
+        background: url('/img/remove.png')center center no-repeat;
+      }
+      &.forbiden{
+        cursor: default;
+        background: url('/img/forbiden.png')center center no-repeat;
+      }
+      &.select{
+        background: url('../img/select.png')center center no-repeat;
+      }
+      &.added{
+        width: auto;
+      }
+    }
+
+    .modal_content{
+      display: flex;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border: 1px solid red;
+      > span:first-child{
+        width: 60px;
+        text-align: right;
+        line-height: 47px;
+        margin-right: 10px;
+        display: inline-block;
+      }
+      .select-modal{
+        width: 245px;
+        border: 1px solid @base-color-1;
+        > header{
+          margin: 20px;
+        }
+        > .select-list{
+          height: 210px;
+          overflow-y: scroll;
+          margin: 0 20px;
+          margin-right: 0;
+          > dd{
+            // border: 1px solid red;
+            box-sizing: border-box;
+            margin: 0;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            & .title{
+              display: flex;
+              > div:last-child{
+                line-height: 30px;
+              }
+            }
+            &.secondary{
+              & .title{
+                > div:last-child{
+                  padding-left: 26px;
+                }
+              }
+            }
+
+          }
+        }
+        
+      }
+      .confirm-modal{
+        border: 1px solid aqua;
+        width: 245px;
+      }
     }
   }
 }
