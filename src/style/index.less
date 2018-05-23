@@ -300,8 +300,11 @@
     }
   }
   .modals {
+    box-sizing: border-box;
     background: #EAEEF2;
+    border: 1px solid #EAEEF2;
     >header,
+    .warning-modal-group,
     .small-modal-group,
     .middle-modal-group,
     .large-modal-group {
@@ -352,7 +355,8 @@
       }
     }
     .middle-modal-group,
-    .large-modal-group{
+    .large-modal-group,
+    .warning-modal-group{
       > header{
         margin-top: 70px;
         margin-bottom: 70px;
@@ -360,7 +364,16 @@
     }
     .large-modal-group .edit-strategy{
       margin-top: 40px;
-      margin-bottom: 40px;
+      // margin-bottom: 40px;
+    }
+    .warning-modal-group{
+      margin-bottom: 70px;
+    }
+    .warning-modals{
+      display: flex;
+      > div:last-child{
+        margin-left: 20px;
+      }
     }
   }
   .clearfix::after {
