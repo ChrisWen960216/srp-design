@@ -26,7 +26,7 @@
     margin: 0 70px;
   }
   min-width: 1325px;
-  > .title {
+  .title {
     display: block;
     font-size: 45px;
     margin: 72px 0 60px 0;
@@ -303,7 +303,8 @@
     background: #EAEEF2;
     >header,
     .small-modal-group,
-    .middle-modal-group {
+    .middle-modal-group,
+    .large-modal-group {
       margin: 0 70px;
     }
     > header {
@@ -350,11 +351,16 @@
         }
       }
     }
-    .middle-modal-group{
+    .middle-modal-group,
+    .large-modal-group{
       > header{
         margin-top: 70px;
         margin-bottom: 70px;
       }
+    }
+    .large-modal-group .edit-strategy{
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
   }
   .clearfix::after {

@@ -1077,7 +1077,7 @@
                         <th>设备编号</th>
                         <th>设备名称</th>
                         <th>域</th>
-                        
+
                       </tr>
                       <tr class='font-color-2 font-t5'>
                         <td>
@@ -1090,7 +1090,7 @@
                         </td>
                         <td>灯集中控制器</td>
                         <td>闵行区</td>
-                        
+
                       </tr>
                       <tr class='font-color-2 font-t5'>
                         <td>
@@ -1459,134 +1459,410 @@
           <span class="extra font-t1">中型弹框(宽度600PX)</span>
         </header>
 
-          <div class="modal middle-modal edit-device">
-            <header>
-              <span class="font-color-2 font-t4">编辑设备</span>
-              <div class="close"></div>
-            </header>
-            <div class="modal_container">
-              <div class="modal_content">
-                <span class="font-color-1 font-t5">网关:</span>
-                <div class="select-modal">
-                  <header>
-                    <div class="input">
-                      <input type="text">
-                      <div></div>
-                      <div class="search"></div>
+        <div class="modal middle-modal edit-device">
+          <header>
+            <span class="font-color-2 font-t4">编辑设备</span>
+            <div class="close"></div>
+          </header>
+          <div class="modal_container">
+            <div class="modal_content">
+              <span class="font-color-1 font-t5">网关:</span>
+              <div class="select-modal">
+                <header>
+                  <div class="input">
+                    <input type="text">
+                    <div></div>
+                    <div class="search"></div>
+                  </div>
+                </header>
+                <dl class="select-list">
+                  <dd class='font-color-2 font-t5'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关一</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class="secondary error-color font-t5">
+                    <span class="title-desc">
+                      <div>无效设备</div>
+                    </span>
+                    <div class="icon forbiden"></div>
+                  </dd>
+                  <dd class="secondary font-color-2 font-t5">
+                    <span class="title-desc">
+                      <div>设备1</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关2</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关3</div>
+                    </span>
+                    <div class="icon added primary-color">已添加</div>
+                  </dd>
+                  <dd class='font-color-2 font-t5'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关一</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class="secondary error-color font-t5">
+                    <span class="title-desc">
+                      <div>无效设备</div>
+                    </span>
+                    <div class="icon forbiden"></div>
+                  </dd>
+                  <dd class="secondary font-color-2 font-t5">
+                    <span class="title-desc">
+                      <div>设备1</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关2</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关3</div>
+                    </span>
+                    <div class="icon added primary-color">已添加</div>
+                  </dd>
+                  <dd class='font-color-2 font-t5'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关一</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class="secondary error-color font-t5">
+                    <span class="title-desc">
+                      <div>无效设备</div>
+                    </span>
+                    <div class="icon forbiden"></div>
+                  </dd>
+                  <dd class="secondary font-color-2 font-t5">
+                    <span class="title-desc">
+                      <div>设备1</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关2</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关3</div>
+                    </span>
+                    <div class="icon added primary-color">已添加</div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="confirm-modal">
+                <dl class="select-list">
+                  <dd class='font-color-2 font-t5'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关一</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class="secondary error-color font-t5">
+                    <span class="title-desc">
+                      <div>无效设备</div>
+                    </span>
+                    <div class="icon forbiden"></div>
+                  </dd>
+                  <dd class="secondary font-color-2 font-t5">
+                    <span class="title-desc">
+                      <div>设备1</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关2</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关3</div>
+                    </span>
+                    <div class="icon added primary-color">已添加</div>
+                  </dd>
+                  <dd class='font-color-2 font-t5'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关一</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class="secondary error-color font-t5">
+                    <span class="title-desc">
+                      <div>无效设备</div>
+                    </span>
+                    <div class="icon forbiden"></div>
+                  </dd>
+                  <dd class="secondary font-color-2 font-t5">
+                    <span class="title-desc">
+                      <div>设备1</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关2</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关3</div>
+                    </span>
+                    <div class="icon added primary-color">已添加</div>
+                  </dd>
+                  <dd class='font-color-2 font-t5'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关一</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class="secondary error-color font-t5">
+                    <span class="title-desc">
+                      <div>无效设备</div>
+                    </span>
+                    <div class="icon forbiden"></div>
+                  </dd>
+                  <dd class="secondary font-color-2 font-t5">
+                    <span class="title-desc">
+                      <div>设备1</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关2</div>
+                    </span>
+                    <div class="icon add"></div>
+                  </dd>
+                  <dd class='font-color-2 font-t5 close'>
+                    <span class="title-desc">
+                      <div class="icon select"></div>
+                      <div>网关3</div>
+                    </span>
+                    <div class="icon added primary-color">已添加</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+
+          <footer>
+            <button class="btn">取消</button>
+            <button class="btn primary-btn">确认</button>
+          </footer>
+        </div>
+      </aside>
+
+      <aside class="large-modal-group">
+        <header>
+          <span class="extra font-t1">大型弹框(宽度700PX)</span>
+        </header>
+
+        <div class="modal large-modal add-device">
+          <header>
+            <span class="font-color-2 font-t4">编辑设备</span>
+            <div class="close"></div>
+          </header>
+          <div class="modal_container">
+            <div class="modal_content">
+              <dl class="device-list">
+                <dd class='font-t5 font-color-1'>
+                  <span>设备编号:</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="请输入设备编号" />
                     </div>
-                  </header>
-                  <dl class="select-list">
-                    <dd class='font-color-2 font-t5'>
-                        <span class="title">
-                          <div class="icon select"></div>
-                          <div>网关一</div>  
-                        </span>
-                        <div class="icon add"></div>
-                    </dd>
-                    <dd class="secondary error-color font-t5">
-                      <span class="title">
-                        <div>无效设备</div>
-                      </span>
-                      <div class="icon forbiden"></div>
-                    </dd>
-                    <dd class="secondary font-color-2 font-t5">
-                        <span class="title">
-                          <div>设备1</div>
-                        </span>
-                        <div class="icon add"></div>
-                      </dd>
-                      <dd class='font-color-2 font-t5 close'>
-                          <span class="title">
-                            <div class="icon select"></div>
-                            <div>网关2</div>  
-                          </span>
-                          <div class="icon add"></div>
-                      </dd>
-                      <dd class='font-color-2 font-t5 close'>
-                          <span class="title">
-                            <div class="icon select"></div>
-                            <div>网关3</div>  
-                          </span>
-                          <div class="icon added primary-color">已添加</div>
-                      </dd>
-                      <dd class='font-color-2 font-t5'>
-                          <span class="title">
-                            <div class="icon select"></div>
-                            <div>网关一</div>  
-                          </span>
-                          <div class="icon add"></div>
-                      </dd>
-                      <dd class="secondary error-color font-t5">
-                        <span class="title">
-                          <div>无效设备</div>
-                        </span>
-                        <div class="icon forbiden"></div>
-                      </dd>
-                      <dd class="secondary font-color-2 font-t5">
-                          <span class="title">
-                            <div>设备1</div>
-                          </span>
-                          <div class="icon add"></div>
-                        </dd>
-                        <dd class='font-color-2 font-t5 close'>
-                            <span class="title">
-                              <div class="icon select"></div>
-                              <div>网关2</div>  
-                            </span>
-                            <div class="icon add"></div>
-                        </dd>
-                        <dd class='font-color-2 font-t5 close'>
-                            <span class="title">
-                              <div class="icon select"></div>
-                              <div>网关3</div>  
-                            </span>
-                            <div class="icon added primary-color">已添加</div>
-                        </dd>
-                        <dd class='font-color-2 font-t5'>
-                            <span class="title">
-                              <div class="icon select"></div>
-                              <div>网关一</div>  
-                            </span>
-                            <div class="icon add"></div>
-                        </dd>
-                        <dd class="secondary error-color font-t5">
-                          <span class="title">
-                            <div>无效设备</div>
-                          </span>
-                          <div class="icon forbiden"></div>
-                        </dd>
-                        <dd class="secondary font-color-2 font-t5">
-                            <span class="title">
-                              <div>设备1</div>
-                            </span>
-                            <div class="icon add"></div>
-                          </dd>
-                          <dd class='font-color-2 font-t5 close'>
-                              <span class="title">
-                                <div class="icon select"></div>
-                                <div>网关2</div>  
-                              </span>
-                              <div class="icon add"></div>
-                          </dd>
-                          <dd class='font-color-2 font-t5 close'>
-                              <span class="title">
-                                <div class="icon select"></div>
-                                <div>网关3</div>  
-                              </span>
-                              <div class="icon added primary-color">已添加</div>
-                          </dd>
-                  </dl>
-                </div>
-                <div class="confirm-modal"></div>
+                    <span class="error-msg error-color">设备编号格式不正确</span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>名称:</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="请输入名称" />
+                    </div>
+                    <span class="error-msg error-color">仅能使用字母、数字或下划线</span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>域:</span>
+                  <div class="input-form">
+                    <div class="select-form">
+                      <input type="text" placeholder="请选择域" readonly>
+                      <div class='select-arrow'></div>
+                    </div>
+                    <span class="error-msg error-color">请选择域</span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>经度:</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="请输入经度坐标" />
+                    </div>
+                    <span class="error-msg error-color">经度坐标格式不正确</span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>维度:</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="请输入纬度坐标" />
+                    </div>
+                    <span class="error-msg error-color">纬度坐标格式不正确</span>
+                  </div>
+                </dd>
+                <footer>
+                  <button class="btn">取消</button>
+                  <button class="btn primary-btn">确认</button>
+                </footer>
+              </dl>
+              <div class="map_container">
+
               </div>
             </div>
 
+          </div>
+        </div>
 
+        <div class="modal large-modal edit-strategy">
+          <header>
+            <span class="font-color-2 font-t4">新建/修改策略</span>
+            <div class="close"></div>
+          </header>
+          <div class="modal_container">
+            <div class="modal_content">
+              <dl class="device-list">
+                <dd class='font-t5 font-color-1'>
+                  <span>策略名称</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" value='夏季路灯使用策略' readonly />
+                    </div>
+                    <span class="error-msg error-color">策略名已使用</span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>日期范围</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="选择起始日期" />
+                    </div>
+                    <span class="error-msg error-color">日期错误</span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>重试次数</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="次" />
+                    </div>
+                    <span class="error-msg error-color"></span>
+                  </div>
+                </dd>
+
+
+              </dl>
+              <dl class="device-list">
+                <dd class='font-t5 font-color-1'>
+                  <span>策略级别</span>
+                  <div class="input-form">
+                    <div class="select-form">
+                      <input type="text" placeholder="平台" readonly>
+                      <div class='select-arrow'></div>
+                    </div>
+                    <span class="error-msg error-color">请选择设备</span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>至</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="选择结束日期" />
+                    </div>
+                    <span class="error-msg error-color"></span>
+                  </div>
+                </dd>
+                <dd class='font-t5 font-color-1'>
+                  <span>重试间隔</span>
+                  <div class="input-form">
+                    <div class='input'>
+                      <input type="text" placeholder="秒" />
+                    </div>
+                    <span class="error-msg error-color"></span>
+                  </div>
+                </dd>
+
+
+              </dl>
+            </div>
+
+            <footer>
+              <div class="select-group">
+                <span class="font-color-1 font-t5">选择组</span>
+                <div class="group-container">
+                  <div class="input">
+                    <input type="text" placeholder="请搜索或创建组">
+                  </div>
+                  <dl class="group-list">
+                    <dd class="font-color-2 font-t5">组1</dd>
+                    <dd class="font-color-2 font-t5">组2</dd>
+                    <dd class="font-color-2 font-t5">组3</dd>
+                    <dd class="font-color-2 font-t5">组4</dd>
+                    <dd class="font-color-2 font-t5">组5</dd>
+                    <dd class="font-color-2 font-t5">组6</dd>
+                    <dd class="font-color-2 font-t5">组7</dd>
+                    <dd class="font-color-2 font-t5">组8</dd>
+                    <dd class="font-color-2 font-t5">组9</dd>
+                    <dd class="font-color-2 font-t5">组10</dd>
+                  </dl>
+                </div>
+              </div>
+            </footer>
+          </div>
             <footer>
               <button class="btn">取消</button>
               <button class="btn primary-btn">确认</button>
             </footer>
-          </div>
+        </div>
       </aside>
     </section>
   </div>
